@@ -15,7 +15,7 @@
 ), '', ' - '); ?><?php //$this->options->title(); ?></title>
 <link rel="stylesheet" href="<?php $this->options->themeUrl('css/reset.css'); ?>">
 <link rel="stylesheet" href="<?php $this->options->themeUrl('css/function.css'); ?>">
-<link rel="stylesheet" href="<?php $this->options->themeUrl('css/theme.css'); ?>">
+<link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
 <?php $this->header(); ?>
 </head>
 <body>
