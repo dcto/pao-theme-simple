@@ -11,13 +11,7 @@
     'tag'       =>  _t('标签 %s 下的文章'),
     'author'    =>  _t('%s 发布的文章')
 ), '', ' - '); ?><?php //$this->options->title(); ?></title>
-<link rel="stylesheet" href="//cdn.staticfile.org/normalize/2.1.3/normalize.min.css">
-<link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
-<link rel="stylesheet" href="<?php $this->options->themeUrl('css/grid.css'); ?>">
-<!--[if lt IE 9]>
-<script src="//cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
-<script src="//cdn.staticfile.org/respond.js/1.3.0/respond.min.js"></script>
-<![endif]-->
+<link rel="stylesheet" href="<?php $this->options->themeUrl('css/reset.css'); ?>">
 <?php $this->header(); ?>
 </head>
 <body>
