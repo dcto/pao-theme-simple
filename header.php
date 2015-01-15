@@ -29,7 +29,7 @@
 <header id="header" class="g-hd">
 
         <div class="row">
-            <div class="site-name col-mb-12 col-9">
+            <div class="site-name fl">
                 <a id="logo" href="<?php $this->options->siteUrl(); ?>">
                     <?php if ($this->options->logoUrl): ?>
                     <img src="<?php $this->options->logoUrl() ?>" alt="<?php $this->options->title() ?>" />
@@ -38,13 +38,14 @@
                 </a>
         	    <p class="description"><?php $this->options->description() ?></p>
             </div>
-            <div class="site-search col-3 kit-hidden-tb">
+            <div class="site-search fr">
                 <form id="search" method="post" action="./" role="search">
                     <label for="s" class="sr-only"><?php _e('搜索关键字'); ?></label>
                     <input type="text" name="s" class="text" placeholder="<?php _e('输入关键字搜索'); ?>" />
                     <button type="submit" class="submit"><?php _e('搜索'); ?></button>
                 </form>
             </div>
+            <!--
             <div class="col-mb-12">
                 <nav id="nav-menu" class="clearfix" role="navigation">
                     <a<?php if($this->is('index')): ?> class="current"<?php endif; ?> href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>
@@ -54,6 +55,7 @@
                     <?php endwhile; ?>
                 </nav>
             </div>
+            -->
         </div><!-- end .row -->
 
 </header><!-- end #header -->
