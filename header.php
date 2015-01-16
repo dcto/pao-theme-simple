@@ -19,30 +19,16 @@
 <?php $this->header(); ?>
 </head>
 <body>
-<!--[if lt IE 8]>
-    <div class="browsehappy" role="dialog"><?php _e('当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>'); ?>.</div>
-<![endif]-->
-
-
-<div class="g-doc">
-
 <header id="header" class="g-hd">
-
-        <div class="row">
             <div class="site-name fl">
-                <a id="logo" href="<?php $this->options->siteUrl(); ?>">
-                    <?php if ($this->options->logoUrl): ?>
-                    <img src="<?php $this->options->logoUrl() ?>" alt="<?php $this->options->title() ?>" />
-                    <?php endif; ?>
-                    <?php $this->options->title() ?>
-                </a>
+                <a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php if ($this->options->logoUrl): ?><img src="<?php $this->options->logoUrl() ?>" alt="<?php $this->options->title() ?>" /><?php endif; ?><?php $this->options->title() ?></a>
         	    <p class="description"><?php $this->options->description() ?></p>
             </div>
             <div class="site-search fr">
                 <form id="search" method="post" action="./" role="search">
-                    <label for="s" class="sr-only"><?php _e('搜索关键字'); ?></label>
-                    <input type="text" name="s" class="text" placeholder="<?php _e('输入关键字搜索'); ?>" />
-                    <button type="submit" class="submit"><?php _e('搜索'); ?></button>
+                    <label for="s" class="sr-only"></label>
+                    <input type="text" name="s" class="u-ipt" placeholder="<?php _e('输入关键字搜索'); ?>" />
+                    <button type="submit" class="u-btn u-btn-c4"><?php _e('Search'); ?></button>
                 </form>
             </div>
             <!--
@@ -56,8 +42,4 @@
                 </nav>
             </div>
             -->
-        </div><!-- end .row -->
-
-</header><!-- end #header -->
-
-</div>
+</header>
