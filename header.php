@@ -25,8 +25,7 @@
         	    <p class="description"><?php $this->options->description() ?></p>
             </div>
  
-            <!--
-            <div class="col-mb-12">
+            <div class="site-page fr">
                 <nav id="nav-menu" class="clearfix" role="navigation">
                     <a<?php if($this->is('index')): ?> class="current"<?php endif; ?> href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>
                     <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
@@ -35,5 +34,4 @@
                     <?php endwhile; ?>
                 </nav>
             </div>
-            -->
 </header>
