@@ -51,7 +51,7 @@ blockquote{margin: 1em 2em 3em 1em; padding-left: 1.5em; border-left: 4px solid 
 .u-btn-c4:hover .btnsel,.u-btn-c4:focus .btnsel{border-top-color:rgba(0,0,0,1);}
 
 /* 文本输入框 */
-.u-ipt{width:180px;padding:5px;height:17px;border:1px solid #D9D9D9;border-top-color:#c0c0c0;line-height:17px;font-size:14px;color:#777;background:#fff;}
+.u-ipt{width:135px;padding:5px;height:16px;border:1px solid #D9D9D9;border-top-color:#c0c0c0;line-height:17px;font-size:14px;color:#777;background:#fff;}
 
 
 /* 普通翻页器 */
