@@ -1,13 +1,12 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <aside id="aside">
-	<div id="search" class="widget">
-		<form action="#" method="GET" action="./" role="search">
-			<fieldset class="clearfix">
-				<input type="search" name="search" value="<?php _e('What are you looking for?'); ?>" onBlur="if(this.value=='')this.value='<?php _e('What are you looking for?'); ?>'" onFocus="if(this.value=='<?php _e('What are you looking for?'); ?>')this.value='' ">
-				<input type="submit" value="Search" class="button">
-			</fieldset>
-		</form>
-	</div>
+   	<div class="site-search">
+        <form id="search" method="post" action="./" role="search">
+            <label for="s" class="sr-only"></label>
+            <input type="text" name="s" class="u-ipt" placeholder="<?php _e('输入关键字搜索'); ?>" />
+            <button type="submit" class="u-btn u-btn-c4"><?php _e('Search'); ?></button>
+        </form>
+    </div>
     <div class="widget">
 		<h3 class="widget-title"><?php _e('Category'); ?></h3>
         <?php $this->widget('Widget_Metas_Category_List')->listCategories('wrapClass=widget-list'); ?>

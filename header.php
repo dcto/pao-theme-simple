@@ -24,13 +24,7 @@
                 <a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php if ($this->options->logoUrl): ?><img src="<?php $this->options->logoUrl() ?>" alt="<?php $this->options->title() ?>" /><?php endif; ?><?php $this->options->title() ?> <?php _e('˙.˙') ?></a>
         	    <p class="description"><?php $this->options->description() ?></p>
             </div>
-            <div class="site-search fr">
-                <form id="search" method="post" action="./" role="search">
-                    <label for="s" class="sr-only"></label>
-                    <input type="text" name="s" class="u-ipt" placeholder="<?php _e('输入关键字搜索'); ?>" />
-                    <button type="submit" class="u-btn u-btn-c4"><?php _e('Search'); ?></button>
-                </form>
-            </div>
+ 
             <!--
             <div class="col-mb-12">
                 <nav id="nav-menu" class="clearfix" role="navigation">
