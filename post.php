@@ -11,10 +11,14 @@
         </div>		
     </article>
     <?php $this->need('comments.php'); ?>
-    <ul class="post-near">
-        <li>上一篇: <?php $this->thePrev('%s','没有了'); ?></li>
-        <li>下一篇: <?php $this->theNext('%s','没有了'); ?></li>
-    </ul>    
+    <article>
+    	<div id="post-near">
+		    <ul class="post-near">
+		        <li>上一篇: <?php $this->thePrev('%s','没有了'); ?></li>
+		        <li>下一篇: <?php $this->theNext('%s','没有了'); ?></li>
+		    </ul>
+    	</div>
+	</article>
 </section>
 <?php $this->need('sidebar.php'); ?>
 <?php $this->need('footer.php'); ?>
