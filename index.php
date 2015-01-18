@@ -2,7 +2,6 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $this->need('header.php');
 ?>
-
 <section id="main" class="main">
 <?php while($this->next()): ?>
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
