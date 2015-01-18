@@ -21,13 +21,13 @@
 <body>
 <header id="header" class="g-hd">
             <div class="site-name fl">
-                <a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php if ($this->options->logoUrl): ?><img src="<?php $this->options->logoUrl() ?>" alt="<?php $this->options->title() ?>" /><?php endif; ?><?php $this->options->title() ?> <?php _e('˙.˙') ?></a>
+                <a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php if ($this->options->logoUrl): ?><img src="<?php $this->options->logoUrl() ?>" alt="<?php $this->options->title() ?>" /><?php endif; ?><?php $this->options->title() ?></a>
         	    <p class="description"><?php $this->options->description() ?></p>
             </div>
  
             <div class="site-page fr">
                 <nav id="nav-menu" class="clearfix" role="navigation">
-                    <a<?php if($this->is('index')): ?> class="current"<?php endif; ?> href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>
+                    <a<?php if($this->is('index')): ?> class="current"<?php endif; ?> href="<?php $this->options->siteUrl(); ?>"><?php _e('Home'); ?></a>
                     <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
                     <?php while($pages->next()): ?>
                     <a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>

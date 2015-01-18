@@ -18,7 +18,7 @@
             <?php $this->widget('Widget_Contents_Post_Recent')
             ->parse('<li><a href="{permalink}">{title}</a></li>'); ?>
         </ul>
-    </section>
+    </div>
     </div>
 
     <div class="widget">
