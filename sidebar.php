@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <aside id="aside">
-   	<div class="site-search">
+   	<div class="widget">
         <form id="search" method="post" action="./" role="search">
             <label for="s" class="sr-only"></label>
             <input type="text" name="s" class="u-ipt" placeholder="<?php _e('输入关键字搜索'); ?>" />
