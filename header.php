@@ -1,3 +1,4 @@
+<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,14 +15,13 @@
     'author'    =>  _t('%s 发布的文章')
 ), '', ' - '); ?><?php //$this->options->title(); ?></title>
 <link rel="stylesheet" href="<?php $this->options->themeUrl('css/reset.css'); ?>">
-<link rel="stylesheet" href="<?php $this->options->themeUrl('css/function.css'); ?>">
 <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
 <?php $this->header(); ?>
 </head>
 <body>
 <header id="header" class="g-hd">
             <div class="site-name fl">
-                <a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php if ($this->options->logoUrl): ?><img src="<?php $this->options->logoUrl() ?>" alt="<?php $this->options->title() ?>" /><?php endif; ?><?php $this->options->title() ?></a>
+                <a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php if ($this->options->logoUrl): ?><img src="<?php $this->options->logoUrl() ?>" alt="<?php $this->options->title() ?>" /><?php endif; ?><?php $this->options->title() ?> <?php _e('˙.˙') ?></a>
         	    <p class="description"><?php $this->options->description() ?></p>
             </div>
             <div class="site-search fr">

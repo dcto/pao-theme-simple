@@ -15,6 +15,9 @@ $this->need('header.php');
         </div>		
     </article>
 <?php endwhile; ?>
+<div id="page" class="page">
+<?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
+</div>
 </section>
 <?php $this->need('sidebar.php'); ?>
 <?php $this->need('footer.php'); ?>
