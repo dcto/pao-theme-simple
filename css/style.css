@@ -4,7 +4,7 @@ body{font:'proxima-nova',\5fae\8f6f\96c5\9ed1,Tahoma,Helvetica,'Lucida Grande',G
 header{border-bottom: 1px solid #ccc; padding:4em;height: 20px; background: #fff;}
 /* 两栏布局  主栏左 侧栏右 */
 section{float:left;width:100%;margin-top: 30px;}
-article{overflow: hidden;background: #fff;margin: 0 340px 40px 20px;padding: 20px;}
+article,.area{overflow: hidden;background: #fff;margin: 0 340px 40px 20px;padding: 20px;}
 aside{position:relative;float:right;width:280px;margin-left:-280px;margin-top: 30px;}
 footer{text-align: center;margin: 20px 0;}
 
@@ -15,12 +15,13 @@ blockquote{margin: 1em 2em 3em 1em; padding-left: 1.5em; border-left: 4px solid 
 .widget{background: #fff; margin: 0 20px 30px 0; padding: 20px;}
 .widget-title{height: 30px;line-height: 30px;padding-left: 20px;border-bottom: 1px solid #ddd;font-size: 16px;}
 .widget-list li{line-height: 30px;padding-left: 20px;}
-.post-title{font-size: 16px;height: 30px;line-height: 30px; border-bottom: 1px solid #ddd;}
+.post-title, .comment-title{font-size: 16px;height: 30px;line-height: 30px; border-bottom: 1px solid #ddd;}
 .post-meta{margin-bottom: 20px;color: #ccc;text-align: right;margin-top: -16px;}
 .post-meta i{font-style: italic}
 .post-content{line-height: 30px; }
 .post-content img{max-width: 100%;}
 .site-name{font-size: 24px;}
+.post-near{margin-top: -30px; line-height: 20px;}
 
 
 
@@ -34,6 +35,23 @@ blockquote{margin: 1em 2em 3em 1em; padding-left: 1.5em; border-left: 4px solid 
 
 
 
+/* 评论框 */
+.comments textarea{width: 98%; border: 1px solid #D9D9D9; border-top-color: #C0C0C0;}
+.col {margin-top: 10px;}
+.col p{margin-bottom: 10px;}
+.col1 {
+    width:200px;
+    float: left;
+}
+.col2 {
+	width: 76%;
+    overflow:hidden;
+    float: right;
+    text-align: right;
+}
+.col3{
+	text-align: right;
+}
 
 
 /* 通用自定义按钮-默认蓝色 */
