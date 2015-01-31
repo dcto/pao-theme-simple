@@ -9,7 +9,7 @@ aside{position:relative;float:right;width:280px;margin-left:-280px;margin-top: 3
 footer{text-align: center;margin: 20px 0;}
 
 pre{margin: 1em 0 3em 0;background: none; border: 1px solid #ddd; overflow: hidden; white-space: pre-wrap;}
-pre, code{font-family: Menlo, Monaco, Consolas, "Lucida Console", "Courier New", monospace; display: block; background: #f8f8f8; line-height: 20px;}
+pre, code{font-family: "Courier New",Menlo, Monaco, Consolas, "Lucida Console",  monospace; display: block; background: #4a4a4a; line-height: 20px;color: #F8F8D4}
 blockquote{margin: 1em 2em 3em 1em; padding-left: 1.5em; border-left: 4px solid #008000; line-height: 20px;}
 
 .widget{background: #fff; margin: 0 20px 30px 0; padding: 20px;}
